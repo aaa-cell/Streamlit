@@ -25,7 +25,7 @@ st.latex('y= w*x +b ')           # 数学公式
 st.title('数组组件')
 
 import pandas as pd
-data = pd.read_csv('app_data/data/titanic_data.csv')
+data = pd.read_csv('data/titanic_data.csv')
 st.dataframe(data)                   # 交互表格
 #st.table(data)                      # 静态表格
 
@@ -58,7 +58,7 @@ st.pyplot(fig)                    # matplotlib图在前端显示
 
 #%% 多媒体组件（图片、音频、视频）##########################################
 # 图片（本地图片或网页图片）
-img = plt.imread('app_data/pic/aixin.jpg')
+img = plt.imread('pic/aixin.jpg')
 st.image(img)
 
 st.image('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2Ftp05%2F1910021352061916-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1660719831&t=710f59a355810fddd28b4cb80f5f2141')
