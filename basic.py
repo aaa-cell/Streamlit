@@ -64,12 +64,12 @@ st.image(img)
 st.image('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2Ftp05%2F1910021352061916-0-lp.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1660719831&t=710f59a355810fddd28b4cb80f5f2141')
 
 # 音频
-with open('app_data/music/稻香-周杰伦.mp3' ,'rb') as f: # rb以二进制形式读取文件
+with open('music/稻香-周杰伦.mp3' ,'rb') as f: # rb以二进制形式读取文件
     au = f.read()
 st.audio(au)
 
 # 视频
-with open('app_data/video/开不了口-广告曲.mp4' ,'rb') as f: # rb以二进制形式读取文件
+with open('video/开不了口-广告曲.mp4' ,'rb') as f: # rb以二进制形式读取文件
     au = f.read()
 st.video(au)
 
@@ -90,7 +90,7 @@ if st.sidebar.button('hello'):  # 添加按钮
 if st.sidebar.button('bye'):
     st.write('bye')
     
-with open('D:/desktop/体验课/streamlit/Streamlit-杨惠/st_app/video/开不了口-广告曲.mp4' ,'rb') as f: # rb以二进制形式读取文件
+with open('video/开不了口-广告曲.mp4' ,'rb') as f: # rb以二进制形式读取文件
     au = f.read()
 st.video(au)
 
